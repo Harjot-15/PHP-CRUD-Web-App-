@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Content</title>
+    <link rel="stylesheet" type="text/css" href="CSS/add_content.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>CRUD Application</h1>
+            <ul>
+                <li><a href="dashboard.php">Home</a></li>
+                <li><a href="admin_control.php">Admin Control</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="form-section">
+        <div class="form-container">
+            <h2>Add Content</h2>
+            <form action="process_add_content.php" method="POST" enctype="multipart/form-data">
+
+                <div class="input-box">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+
+                <div class="input-box upload-box">
+                    <label for="image">Image</label>
+                    <input type="file" id="image" name="image" accept="image/*" required>
+                </div>
+                <input type="submit" value="Add Content">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 CRUD Application. All rights reserved.</p>
+    </footer>
+</body>
+</html>
